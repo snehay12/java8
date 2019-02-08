@@ -1,6 +1,7 @@
 package com.demo;
 import java.io.File;
 import java.io.FileFilter;
+import java.util.Scanner;
 
 public class JavaFileFilter {
 
@@ -13,7 +14,11 @@ public class JavaFileFilter {
 			}
 		};
 		
-		File file = new File("/Users/Sne/GitRepository/");
+		Scanner scanner= new Scanner(System.in);
+		System.out.println("Please enter the file path: ");
+		String filePath = scanner.nextLine().toString();
+		scanner.close();
+		File file = new File(filePath);
 		for(File f : file.listFiles(fileFilter))
 		{
 			System.out.println(f.getName());
