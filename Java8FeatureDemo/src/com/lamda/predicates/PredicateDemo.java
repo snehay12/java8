@@ -10,9 +10,9 @@ public class PredicateDemo {
 	
 	private static List<Student> studentList = StudentDatabase.getAllStudents();
 	
-	static Predicate<Student> gradeThreePredicate = (student) -> student.getGrade() >= 3;
+	public static Predicate<Student> gradeThreePredicate = (student) -> student.getGrade() >= 3;
 	
-	static Predicate<Student> gpaThreePredicate = (student) -> student.getGpa()>=3.5;
+	public static Predicate<Student> gpaThreePredicate = (student) -> student.getGpa()>=3.5;
 	
 	private static void lambdaPrintStudentsWithCondition()
 	{	
