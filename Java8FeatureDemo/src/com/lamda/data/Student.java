@@ -62,4 +62,9 @@ public class Student {
 	public String toString() {
 		return "Name :" + name + " Gender: " + gender + " Grade: " + grade + " GPA: " + gpa;
 	}
+	
+	public void printListOfActivities()
+	{
+		System.out.println(activities);
+	}
 }

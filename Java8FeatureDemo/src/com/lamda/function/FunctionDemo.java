@@ -32,5 +32,4 @@ public class FunctionDemo {
 	public static void main(String[] args) {
 		System.out.println(studentFunction.apply(studentList));
 	}
-
 }
