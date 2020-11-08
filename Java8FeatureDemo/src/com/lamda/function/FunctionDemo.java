@@ -32,4 +32,8 @@ public class FunctionDemo {
 	public static void main(String[] args) {
 		System.out.println(studentFunction.apply(studentList));
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5526fb0216f474d0866960d5925d3661b0142a7
 }
