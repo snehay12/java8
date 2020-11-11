@@ -8,8 +8,19 @@ public class Student {
 	private double gpa;
 	private String gender;
 	private List<String> activities;
+	private int noteBooks;
 	
 	public Student(){}
+
+	public Student(String name, int grade, double gpa, String gender, List<String> activities, int noteBooks) {
+		super();
+		this.name = name;
+		this.grade = grade;
+		this.gpa = gpa;
+		this.gender = gender;
+		this.activities = activities;
+		this.noteBooks = noteBooks;
+	}
 
 	public Student(String name, int grade,double gpa, String gender, List<String> activities)
 	{
@@ -60,11 +71,19 @@ public class Student {
 	}
 
 	public String toString() {
-		return "Name :" + name + " Gender: " + gender + " Grade: " + grade + " GPA: " + gpa;
+		return "\nName :" + name + " Gender: " + gender + " Grade: " + grade + " GPA: " + gpa;
 	}
 	
 	public void printListOfActivities()
 	{
 		System.out.println(activities);
+	}
+
+	public int getNoteBooks() {
+		return noteBooks;
+	}
+
+	public void setNoteBooks(int noteBooks) {
+		this.noteBooks = noteBooks;
 	}
 }
