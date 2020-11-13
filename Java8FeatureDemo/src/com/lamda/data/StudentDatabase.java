@@ -2,9 +2,14 @@ package com.lamda.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDatabase {
 
+	public static Supplier<Student> studentSupplier = ()->{
+		Student adam = new Student("Adam",2,3.6,"male", Arrays.asList("swimming","voleyball","basketball"),11);
+		return adam;
+	};
 	public static List<Student> getAllStudents()
 	{
 		Student adam = new Student("Adam",2,3.6,"male", Arrays.asList("swimming","voleyball","basketball"),11);
